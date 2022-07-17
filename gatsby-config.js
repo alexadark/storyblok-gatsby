@@ -9,6 +9,15 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-postcss",
     {
+      resolve: "gatsby-source-storyblok",
+      options: {
+        accessToken: "5Jv9Gss9irwaru1reRvgGgtt",
+        version: process.env.NODE_ENV === "production" ? "published" : "draft",
+        localAssets: true, // Optional parameter to download the images to use with Gatsby Image Plugin
+        // languages: ['de', 'at'] // Optional parameter. Omission will retrieve all languages by default.
+      },
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",

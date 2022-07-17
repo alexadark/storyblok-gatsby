@@ -2456,6 +2456,20 @@
     escape-string-regexp "^2.0.0"
     lodash.deburr "^4.1.0"
 
+"@storyblok/js@^1.6.2":
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/@storyblok/js/-/js-1.6.3.tgz#01e51fcd0c825197f7b4df279b5413cf1453aace"
+  integrity sha512-8VUPLoe4RlSPkOGcc+u9WbzZwDlY9tCxKcNg48F/jifx32zVeyVuAAYo7RLZNbDcV4QEr6aoAppxdBF+slD5Kg==
+  dependencies:
+    storyblok-js-client "^4.5.6"
+
+"@storyblok/react@^1.0.5":
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/@storyblok/react/-/react-1.0.13.tgz#2e059040775de047b639b01a28fa511db72464d0"
+  integrity sha512-W93eIO3ArwKMrXoMlYXCDAkjwNbdCFsOOxCQdzFhgdS7fITLiNKkCdZ5I7oRkQHgEtvKcw3tAY9IbzsCNF9T7A==
+  dependencies:
+    "@storyblok/js" "^1.6.2"
+
 "@swc/helpers@^0.3.15":
   version "0.3.17"
   resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.3.17.tgz#7c1b91f43c77e2bba99492162a498d465ef253d5"
@@ -5952,6 +5966,15 @@ gatsby-source-filesystem@^4.18.1:
     valid-url "^1.0.9"
     xstate "^4.26.1"
 
+gatsby-source-storyblok@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-source-storyblok/-/gatsby-source-storyblok-4.0.1.tgz#f792f719f020aec2c542eb0bb5bac98c578ef3b1"
+  integrity sha512-vo2/H6pm9MOVFjRP5MVecla+cUhb3Bi6AfeR749RUjhsIv36lftjXZisxMEmxXyuJpp1aLoZSnGvgZvGK7hrNw==
+  dependencies:
+    "@storyblok/react" "^1.0.5"
+    json-stringify-safe "^5.0.1"
+    storyblok-js-client "^4.5.2"
+
 gatsby-telemetry@^3.18.1:
   version "3.18.1"
   resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-3.18.1.tgz#b51554a84ebcc315fa185194e64303ee875f567f"
@@ -7161,6 +7184,11 @@ json-stable-stringify-without-jsonify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz#9db7b59496ad3f3cfef30a75142d2d930ad72651"
   integrity sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==
+
+json-stringify-safe@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
+  integrity sha512-ZClg6AaYvamvYEE82d3Iyd3vSSIjQ+odgjaTzRuO3s7toCdFKczob2i0zCh7JE8kWn17yvAWhUVxvqGwUalsRA==
 
 json5@^1.0.1:
   version "1.0.1"
@@ -9829,6 +9857,11 @@ statuses@2.0.1:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.5.0.tgz#161c7dac177659fd9811f43771fa99381478628c"
   integrity sha512-OpZ3zP+jT1PI7I8nemJX4AKmAX070ZkYPVWV/AaKTJl+tXCTGyVdC1a4SL8RUQYEwk/f34ZX8UTykN68FwrqAA==
+
+storyblok-js-client@^4.5.2, storyblok-js-client@^4.5.6:
+  version "4.5.6"
+  resolved "https://registry.yarnpkg.com/storyblok-js-client/-/storyblok-js-client-4.5.6.tgz#caab0bb1ead8618f84afcc35be9305883d85e628"
+  integrity sha512-S0cXKkEqGDibD32K48FFodjeu/+eF++nrHhrLzo/bKxrnyQiPChPccFAnzsJCQ6uMvRuVGZzjKwM5/sMeBRthg==
 
 stream-parser@~0.3.1:
   version "0.3.1"
