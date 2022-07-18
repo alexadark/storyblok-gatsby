@@ -6,6 +6,7 @@ import Teaser from "./Teaser";
 import Grid from "./Grid";
 import Feature from "./Feature";
 import TeamMember from "./TeamMember";
+import Text from "./Text";
 
 const sbConfig = configuration.plugins.find(
   (plugin) => plugin.resolve === "gatsby-source-storyblok"
@@ -19,6 +20,7 @@ storyblokInit({
     grid: Grid,
     feature: Feature,
     team_member: TeamMember,
+    text: Text,
   },
 });
 
