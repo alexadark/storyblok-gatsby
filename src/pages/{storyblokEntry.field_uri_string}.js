@@ -7,22 +7,21 @@ import {
   storyblokEditable,
 } from "gatsby-source-storyblok";
 
-const StoryblokEntry = (props) => {
-  // let story = data.storyblokEntry;
-  // story = useStoryblokState(story);
-  // console.log(story);
+const StoryblokEntry = ({ data }) => {
+  let story = data.storyblokEntry;
+  story = useStoryblokState(story);
+  console.log(story);
 
-  // const components = story.content.body?.map((blok) => (
-  //   <StoryblokComponent blok={blok} key={blok._uid} />
-  // ));
-  console.log(props);
+  const components = story.content.body?.map((blok) => (
+    <StoryblokComponent blok={blok} key={blok._uid} />
+  ));
 
   return (
     <Layout>
-      {/* <div {...storyblokEditable(story.content)}>
+      <div {...storyblokEditable(story.content)}>
         <h1>{story.name}</h1>
         {components}
-      </div> */}
+      </div>
       <h1>hello</h1>
     </Layout>
   );
