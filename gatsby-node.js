@@ -1,5 +1,5 @@
 const path = require(`path`);
-const pageTemplate = path.resolve(`./src/templates/page.js`);
+const pageTemplate = path.resolve(`./src/templates/StoryblokEntry.js`);
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
