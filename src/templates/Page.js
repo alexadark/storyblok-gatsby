@@ -33,6 +33,10 @@ export const query = graphql`
     storyblokEntry(full_slug: { eq: $full_slug }) {
       content
       name
+      full_slug
+      uuid
+      id
+      internalId
     }
   }
 `;
